@@ -95,6 +95,7 @@ Calculate how imbalanced the dataset is by searching for the label “Normal” 
 ```
 $ grep    ",Normal" DNN-EdgeIIoT-dataset.csv | wc -l
 1615643
+
 $ grep -v ",Normal" DNN-EdgeIIoT-dataset.csv | wc -l
 603559
 ```
