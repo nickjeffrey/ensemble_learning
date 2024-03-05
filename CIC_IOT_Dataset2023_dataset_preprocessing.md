@@ -8,6 +8,7 @@ The dataset has already undergone some pre-processing.  The network packet cap-t
 ```
 $ du -sh CICIoT2023.zip
 2.7G
+
 $ unzip CICIoT2023.zip
 $ du -ch part*.csv | tail -n 1
 13G     total
@@ -17,6 +18,7 @@ There are 169 files in the dataset, with the filenames shown below:
 ```
 $ find /datasets/CIC_IOT_Dataset2023/csv -type f -name "*.csv" | wc -l
 169
+
 $ find /datasets/CIC_IOT_Dataset2023/csv -type f -name "*.csv"
 /datasets/CIC_IOT_Dataset2023/csv/part-00092-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv
 /datasets/CIC_IOT_Dataset2023/csv/part-00037-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv
@@ -273,6 +275,7 @@ Calculate how imbalanced the dataset is by searching for the label “BenignTraf
 ```
 $ grep BenignTraffic merged.csv | wc -l
 1098195
+
 $ grep -v BenignTraffic merged.csv | wc -l
 45588385
 ```
@@ -298,6 +301,7 @@ After dropping the DDoS traffic, calculate how imbalanced the dataset is.  We ca
 ```
 $ grep    BenignTraffic merged_filtered.csv | wc -l
 1,098,195
+
 $ grep -v BenignTraffic merged_filtered.csv | wc -l
 1,769,539
 ```
