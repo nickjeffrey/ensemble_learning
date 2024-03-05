@@ -84,7 +84,8 @@ $ wc -l DNN-EdgeIIoT-dataset.csv
 ```
 Use the following syntax to count the number of commas in the header row, which indicates the number of columns (features) in the dataset.  
 Please note that since the last column in the CSV file is not followed by a comma, the number of features is one greater than the calculation below:
-```$ cat DNN-EdgeIIoT-dataset.csv | head -n 1 | grep -o , | wc -w
+```
+$ cat DNN-EdgeIIoT-dataset.csv | head -n 1 | grep -o , | wc -w
 62
 ```
 
