@@ -18,6 +18,7 @@ There are 51 files in the Edge-IIoTset2023 dataset, with the filenames listed be
 ```
 $ find /datasets/Edge-IIoTset2023 -type f  | wc -l
 51
+
 $ find /datasets/Edge-IIoTset2023 -type f
 /datasets/Edge-IIoTset2023/Edge-IIoTset dataset.zip
 /datasets/Edge-IIoTset2023/Attack traffic/Backdoor_attack.csv
@@ -101,9 +102,13 @@ $ grep -v ",Normal" DNN-EdgeIIoT-dataset.csv | wc -l
 This dataset has 603559/(603559+1615643) * 100 = 27.2% anomaly data, and (100-27.2)=72.8% normal data.  However, a large portion of the attack data is Distributed Denial of Service (DDoS), which is very “noisy”, thus polluting the dataset with low-quality data.  Since DDoS attacks can be considered as a threshold-based metric, they are best addressed via perimeter firewalls rather than in a ML model, so we will drop the DDoS entries from the dataset.
 ```
 $ cat DNN-EdgeIIoT-dataset.csv | grep -v DDoS > DNN-EdgeIIoT-dataset2.csv
+```
+
 Now check the class balance again after removing the DDoS traffic.
+```
 $ grep    ",Normal" DNN-EdgeIIoT-dataset2.csv | wc -l
 1615643
+
 $ grep -v ",Normal" DNN-EdgeIIoT-dataset2.csv | wc -l
 265582
 ```
