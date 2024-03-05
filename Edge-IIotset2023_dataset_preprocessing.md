@@ -8,6 +8,7 @@ The Edge-IIoTset2023 dataset has already undergone some pre-processing.  The net
 ```
 $ du -sh 'Edge-IIoTset dataset.zip'
 1.5G
+
 $ unzip 'Edge-IIoTset dataset.zip'
 $ du -sh .
 12G     total
