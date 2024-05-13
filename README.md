@@ -1,4 +1,4 @@
-Supplementary material for paper published in MDPI Electronics journal DOI:#####
+Supplementary material for paper published in MDPI Electronics journal DOI: [#####](https://doi.org/10.3390/electronics13071391)
 
 This repository contains the following files:
 
