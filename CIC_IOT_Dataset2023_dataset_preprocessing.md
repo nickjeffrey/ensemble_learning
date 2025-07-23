@@ -290,7 +290,7 @@ $ cat merged.csv | grep -E ",DoS-|,DDoS-|_Flood|_flood" | wc -l
 ```
 
 
-Remove the DoS and DDoS and flood traffic, as those are better detected with a thresh-old-based strategy.
+Remove the DoS and DDoS and flood traffic, as those are better detected with a threshold-based strategy.
 ```
 $ cat merged.csv | grep -E -v ",DoS-|,DDoS-|_Flood|_flood" > merged_filtered.csv
 $ wc -l merged_filtered.csv
