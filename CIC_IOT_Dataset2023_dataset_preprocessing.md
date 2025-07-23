@@ -213,7 +213,7 @@ Use a loop to append all the CSV files (minus the header row) into a new merged 
 $ find /datasets/CIC_IOT_Dataset2023/csv -type f -name "part*.csv" | sort | while read filename ; do echo $filename ; cat $filename | grep -v ^flow_duration >> merged.csv ; done
 ```
 
-The number of lines in the new merged file is ~46 million, which is 168 lines less than the line counts of all the individual CSV files, because each of the individual files had a head-er row.
+The number of lines in the new merged file is ~46 million, which is 168 lines less than the line counts of all the individual CSV files, because each of the individual files had a header row.
 ```
 $ wc -l merged.csv
 46,686,580 merged.csv
