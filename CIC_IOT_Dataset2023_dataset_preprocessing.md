@@ -4,7 +4,7 @@ To aid in reproducibility efforts by future researchers, the dataset pre-process
 
 The CICIoT2023 dataset can be downloaded from https://www.unb.ca/cic/datasets/iotdataset-2023.html
 
-The dataset has already undergone some pre-processing.  The network packet capture (pcap) files have already been converted to CSV format.  In compressed form, the da-taset consumes ~2.7GB of disk space, and after uncompressing, increases in size to ~13GB.
+The dataset has already undergone some pre-processing.  The network packet capture (pcap) files have already been converted to CSV format.  In compressed form, the dataset consumes ~2.7GB of disk space, and after uncompressing, increases in size to ~13GB.
 ```
 $ du -sh CICIoT2023.zip
 2.7G
